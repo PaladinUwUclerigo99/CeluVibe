@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Referencias APA</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fuente personalizada -->
+  <link href="https://fonts.googleapis.com/css2?family=Capitana:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Config de Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            capitana: ['Capitana', 'sans-serif'],
+          },
+          colors: {
+            fondo: '#F8EDEB',
+            principal: '#A47148',
+            borde: '#9C8F84',
+          },
+          boxShadow: {
+            glow: '0 4px 20px rgba(0,0,0,0.08)',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    body {
+      background: radial-gradient(ellipse at top left, #f8ede8, #f1e5dc);
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-in-out both;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+
+<body class="font-capitana text-[#3A2C26] p-6 md:p-10">
+
+  <!-- Encabezado -->
+  <header class="text-center mb-10 fade-in">
+    <h1 class="text-4xl md:text-5xl font-bold text-principal tracking-wide mb-2">Fuentes/ Referencias APA</h1>
+    <div class="flex justify-center items-center gap-3 mt-4 text-principal">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 11c0-1.104.896-2 2-2s2 .896 2 2-.896 2-2 2-2-.896-2-2z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16.34A4.993 4.993 0 0012 15c-2.761 0-5 2.239-5 5h10c0-.879-.195-1.713-.547-2.46" />
+      </svg>
+      <span class="text-sm italic">Referencias extraídas de fuentes confiables</span>
+    </div>
+  </header>
+
+  <!-- Contenedor de referencias -->
+  <section class="max-w-4xl mx-auto bg-white border-4 border-dotted border-borde rounded-2xl p-8 shadow-glow fade-in space-y-5 text-sm leading-relaxed">
+
+    <p>• Álvarez, D. O. (2025, 7 abril). Célula eucariota - Qué es, partes, tipos y funciones. Concepto. <br><a class="text-blue-700 underline" href="https://concepto.de/celula-eucariota/" target="_blank">https://concepto.de/celula-eucariota/</a></p>
+
+    <p>• Smile and Learn - Español. (2019, 8 mayo). Las célula eucariotas y sus partes para niños - Célula animal y vegetal [Video]. YouTube. <br><a class="text-blue-700 underline" href="https://www.youtube.com/watch?v=0tJbJB3Zbw" target="_blank">https://www.youtube.com/watch?v=0tJbJB3Zbw</a></p>
+
+    <p>• Ilerna, & iLERNA. (2024, 21 agosto). La célula eucariota: qué es, partes y funciones. <br><a class="text-blue-700 underline" href="https://www.ilerna.es/blog/celula-eucariota" target="_blank">https://www.ilerna.es/blog/celula-eucariota</a></p>
+
+    <p>• Pombal, M. M. P. M. M. Á. (s. f.). La célula. 1. Introducción. <br><a class="text-blue-700 underline" href="https://mmejias.webs.uvigo.es/5-celulas/1-origen-eucariotas.php?tema=b" target="_blank">https://mmejias.webs.uvigo.es/5-celulas/1-origen-eucariotas.php?tema=b</a></p>
+
+    <p>• Rothschuh, U. (2024, April 4). Tipos de células: qué son, partes y funciones. <br><a class="text-blue-700 underline" href="https://www.ecologiaverde.com/tipos-de-celulas-que-son-partes-y-funciones-3591.html" target="_blank">https://www.ecologiaverde.com/tipos-de-celulas-que-son-partes-y-funciones-3591.html</a></p>
+
+    <p>• Ambien_Admin. (2025, 27 febrero). ¿Qué es una célula eucariota? Glosario de ciencias. <br><a class="text-blue-700 underline" href="https://ambientecn.org/celula-eucariota" target="_blank">https://ambientecn.org/celula-eucariota</a></p>
+
+    <p>• Netex. (n.d). FUNCIONES VITALES DE LA CÉLULA. <br><a class="text-blue-700 underline" href="https://www3.gobiernodecanarias.org/medusa/contenidosdigitales/ucticee/s2/CDI100000047/#" target="_blank">https://www3.gobiernodecanarias.org/medusa/contenidosdigitales/ucticee/s2/CDI100000047/#</a></p>
+
+    <p>• Clases Particulares en Ávila. (2022, 27 octubre). La CÉLULA para NIÑOS [Video]. YouTube. <br><a class="text-blue-700 underline" href="https://www.youtube.com/watch?v=N_rGFu7bhos" target="_blank">https://www.youtube.com/watch?v=N_rGFu7bhos</a></p>
+
+    <p>• De Enciclopedia Significados, E. (2020, May 20). Partes de la célula. <br><a class="text-blue-700 underline" href="https://www.significados.com/partes-de-la-celula/" target="_blank">https://www.significados.com/partes-de-la-celula/</a></p>
+  </section>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Datos Curiosos - CeluVibe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #FFF7F0;
+      font-family: 'Nunito', sans-serif;
+    }
+    .titulo {
+      color: #a2826d;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .dato:hover {
+      transform: translateY(-5px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .dato h3 {
+      color: #a2826d;
+    }
+  </style>
+</head>
+<body class="p-6 md:p-12">
+  <h1 class="text-5xl md:text-6xl font-extrabold text-center titulo mb-16 leading-tight tracking-tight">
+    Datos que no te dijeron <br> sobre las células
+  </h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-16 max-w-7xl mx-auto">
+    
+    <!-- Estructura general para cada dato -->
+    <!-- Solo cambié el contenido textual donde hiciera falta -->
+    <div class="dato bg-white rounded-2xl p-6 shadow-md text-center flex flex-col items-center transition-all">
+      <h3 class="text-xl font-bold mb-2">¡Tu cuerpo está hecho de muchísimas células!</h3>
+      <p class="mb-4 text-gray-700">Hay más de 37 billones de células en ti</p>
+      <img src="datos_images/muchas_celulas.png" alt="Muchísimas células" class="w-full max-w-xs rounded-lg shadow">
+    </div>
+
+    <div class="dato bg-white rounded-2xl p-6 shadow-md text-center flex flex-col items-center transition-all">
+      <h3 class="text-xl font-bold mb-2">La célula más grande que tienes es... un óvulo</h3>
+      <p class="mb-4 text-gray-700">Y la más pequeñita es un espermatozoide</p>
+      <img src="datos_images/ovulo_esperma.png" alt="Óvulo y espermatozoide" class="w-full max-w-xs rounded-lg shadow">
+    </div>
+
+    <div class="dato bg-white rounded-2xl p-6 shadow-md text-center flex flex-col items-center transition-all">
+      <h3 class="text-xl font-bold mb-2">Las células son como fábricas miniatura</h3>
+      <p class="mb-4 text-gray-700">Trabajan todo el día para darte energía, hacer crecer el cuerpo y protegerte</p>
+      <img src="datos_images/obreros.jpg" alt="Fábrica celular" class="w-full max-w-xs rounded-lg shadow">
+    </div>
+
+    <div class="dato bg-white rounded-2xl p-6 shadow-md text-center flex flex-col items-center transition-all">
+      <h3 class="text-xl font-bold mb-2">¡Tus glóbulos rojos no tienen núcleo!</h3>
+      <p class="mb-4 text-gray-700">Son las únicas células humanas sin núcleo. ¡Pero aún así hacen su trabajo!</p>
+      <img src="datos_images/globulos.png" alt="Glóbulos rojos" class="w-full max-w-xs rounded-lg shadow">
+    </div>
+
+    <div class="dato bg-white rounded-2xl p-6 shadow-md text-center flex flex-col items-center transition-all">
+      <h3 class="text-xl font-bold mb-2">Tus células se renuevan todo el tiempo</h3>
+      <p class="mb-4 text-gray-700">Millones mueren y nacen cada día</p>
+      <img src="datos_images/calendario.png" alt="Renovación celular" class="w-full max-w-xs rounded-lg shadow">
+    </div>
+
+    <div class="dato bg-white rounded-2xl p-6 shadow-md text-center flex flex-col items-center transition-all">
+      <h3 class="text-xl font-bold mb-2">Tus neuronas pueden vivir toda tu vida</h3>
+      <p class="mb-4 text-gray-700">Algunas como las del cerebro no se reemplazan. ¡Cuídalas!</p>
+      <img src="datos_images/cerebro.png" alt="Neuronas" class="w-full max-w-xs rounded-lg shadow">
+    </div>
+
+    <div class="dato bg-white rounded-2xl p-6 shadow-md text-center flex flex-col items-center transition-all">
+      <h3 class="text-xl font-bold mb-2">Las células vegetales tienen algo que tú no: clorofila</h3>
+      <p class="mb-4 text-gray-700">¡Gracias a eso las plantas hacen su comida con el sol!</p>
+      <img src="datos_images/flor.png" alt="Clorofila" class="w-full max-w-xs rounded-lg shadow">
+    </div>
+
+    <div class="dato bg-white rounded-2xl p-6 shadow-md text-center flex flex-col items-center transition-all">
+      <h3 class="text-xl font-bold mb-2">Las bacterias también son células, pero muy simples</h3>
+      <p class="mb-4 text-gray-700">Solo tienen lo básico para vivir</p>
+      <img src="datos_images/bacterias.jpg" alt="Bacterias" class="w-full max-w-xs rounded-lg shadow">
+    </div>
+
+    <div class="dato bg-white rounded-2xl p-6 shadow-md text-center flex flex-col items-center transition-all">
+      <h3 class="text-xl font-bold mb-2">Las mitocondrias son las baterías de la célula</h3>
+      <p class="mb-4 text-gray-700">Le dan energía para que funcione todo</p>
+      <img src="datos_images/mitocondria.jpg" alt="Mitocondrias" class="w-full max-w-xs rounded-lg shadow">
+    </div>
+
+    <div class="dato bg-white rounded-2xl p-6 shadow-md text-center flex flex-col items-center transition-all">
+      <h3 class="text-xl font-bold mb-2">Todas las células tienen una “piel”: la membrana</h3>
+      <p class="mb-4 text-gray-700">Es como una puerta que decide qué entra y qué sale</p>
+      <img src="datos_images/puerta.png" alt="Membrana celular" class="w-full max-w-xs rounded-lg shadow">
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Zona de Biología</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fuente personalizada -->
+  <link href="https://fonts.googleapis.com/css2?family=Capitana:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            capitana: ['Capitana', 'sans-serif'],
+          },
+          colors: {
+            fondo: '#F5E5D8',
+            texto: '#4D3227',
+            titulo: '#836152',
+            barra: '#a2826d',
+          },
+          boxShadow: {
+            glow: '0 4px 20px rgba(0,0,0,0.08)',
+          },
+          transitionTimingFunction: {
+            soft: 'cubic-bezier(0.4, 0, 0.2, 1)',
+          },
+          scale: {
+            '101': '1.01',
+          },
+        },
+      },
+    };
+  </script>
+
+  <style>
+    .card:hover {
+      transform: translateY(-6px) scale(1.02);
+    }
+    .card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  </style>
+</head>
+
+<body class="bg-fondo text-texto font-capitana p-6 md:p-10">
+
+  <!-- Encabezado -->
+  <section class="text-center mb-14 animate-fade-in-up">
+    <h2 class="text-xl md:text-2xl text-titulo mb-2 tracking-wide">Zona de Biología:</h2>
+    <h1 class="text-4xl md:text-6xl font-bold text-[#6e5943] drop-shadow-sm">Descubriendo las Células</h1>
+  </section>
+
+  <!-- Tarjetas -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+
+    <!-- Tarjeta 1 -->
+    <div class="card bg-white rounded-2xl border border-[#D8CEC5] shadow-glow p-6 hover:shadow-xl">
+      <div class="w-10 h-1.5 bg-barra rounded-full mx-auto mb-4 animate-pulse"></div>
+      <h3 class="text-xl font-semibold text-[#844F3C] mb-3">¿Cómo aplicamos lo aprendido?</h3>
+      <p class="text-sm leading-relaxed">
+        <span class="font-bold">Redacción científica y clara</span><br/>
+        Al redactar el contenido, usamos los términos científicos aprendidos, pero explicados en lenguaje sencillo para que cualquier persona —con o sin conocimientos previos— pueda entenderlo.
+      </p>
+    </div>
+
+    <!-- Tarjeta 2 -->
+    <div class="card bg-white rounded-2xl border border-[#D8CEC5] shadow-glow p-6 hover:shadow-xl">
+      <div class="w-10 h-1.5 bg-barra rounded-full mx-auto mb-4 animate-pulse"></div>
+      <h3 class="text-xl font-semibold text-[#844F3C] mb-3">Reconociendo al curso de Biología</h3>
+      <p class="text-sm leading-relaxed">
+        Este proyecto no hubiera sido posible sin las clases de Biología, que nos dieron las bases científicas necesarias para entender y explicar la información correctamente. Por eso, decidimos dedicar esta sección para mostrar lo mucho que aprendimos y lo bien que fue aplicar ese conocimiento en un entorno práctico y digital.
+      </p>
+    </div>
+
+    <!-- Tarjeta 3 -->
+    <div class="card bg-white rounded-2xl border border-[#D8CEC5] shadow-glow p-6 hover:shadow-xl">
+      <div class="w-10 h-1.5 bg-barra rounded-full mx-auto mb-4 animate-pulse"></div>
+      <h3 class="text-xl font-semibold text-[#844F3C] mb-3 border-b border-[#B39D91] pb-1">Reflexión final</h3>
+      <p class="text-sm leading-relaxed">
+        Gracias al curso, descubrimos que la ciencia también se puede comunicar con creatividad. Esta página web es un ejemplo de cómo los conocimientos del aula pueden transformarse en proyectos reales, colaborativos y útiles para otros estudiantes.
+      </p>
+    </div>
+
+    <!-- Tarjeta 4 -->
+    <div class="card bg-white rounded-2xl border border-[#D8CEC5] shadow-glow p-6 hover:shadow-xl flex items-center justify-center text-center">
+      <div class="text-[#844F3C] text-lg font-semibold italic leading-relaxed">
+        “Aprender Biología no solo es memorizar, sino también entender el mundo que nos rodea.”
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Animaciones -->
+  <script>
+    // Animación de fade-in al cargar
+    document.addEventListener("DOMContentLoaded", () => {
+      const section = document.querySelector("section");
+      section.classList.add("opacity-0");
+      setTimeout(() => {
+        section.classList.add("transition-all", "duration-700", "ease-soft", "opacity-100", "translate-y-0");
+      }, 100);
+    });
+  </script>
+</body>
+</html>

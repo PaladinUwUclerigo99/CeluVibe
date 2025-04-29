@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¿Qué es la célula? - CeluVibe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.ccs">
+    <link rel="stylesheet" href="css/estilosque.css">
+    <script type="js/jquery.min.js"></script>
+
+  <!-- Fuente Capitana -->
+  <link href="https://fonts.googleapis.com/css2?family=Capitana:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind Config -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            capitana: ['Capitana', 'sans-serif'],
+          },
+          colors: {
+            fondo: '#F5E5D8',
+            texto: '#4D3227',
+            titulo: '#a2826d',
+            linea: '#cac4be',
+            caja: '#4D3227',
+            parrafo1: '#ad9e94',
+          }
+        }
+      }
+    }
+  </script>
+
+ 
+</head>
+
+<body class="bg-fondo text-texto font-capitana px-6 md:px-12 py-8">
+
+  <!-- Encabezado -->
+  <header class="mb-12">
+    <div class="flex flex-col lg:flex-row justify-between gap-4 items-start">
+      <div class="flex-1">
+        <h1 class="text-4xl md:text-5xl font-bold text-titulo leading-tight mb-2">
+          ¡Descubre la Célula! <span class="block text-texto">La Pequeña Máquina de la Vida</span>
+        </h1>
+
+        <!-- Línea -->
+        <div class="h-[3px] bg-linea my-3 max-w-4xl"></div>
+      </div>
+
+      <!-- Navegación -->
+      <nav class="flex items-center gap-4 mt-2 text-sm">
+        <button class="bg-[#4D3227] text-white px-4 py-1 rounded shadow-md transition-colors duration-200 text-xs font-bold">
+          INICIO
+        </button>
+        <a href="#" class="font-semibold transition-colors">ABOUT US</a>
+        <input type="text" placeholder="BUSCAR"
+          class="px-3 py-1 rounded border border-linea focus:outline-none focus:ring-2 focus:ring-titulo w-36 text-sm bg-white" />
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+
+    <!-- Texto -->
+    <div class="text-[18px] leading-relaxed space-y-6">
+      <p class="text-parrafo1 font-medium">
+        ¿Sabías que todo lo que te rodea está formado por una increíble estructura llamada célula? ¡Sí! La célula es la unidad básica de la vida.
+        Aunque es tan pequeña que no la podemos ver sin un microscopio, es increíblemente poderosa. Todo, desde las bacterias más simples hasta los seres humanos, ¡todo está hecho de células!
+      </p>
+
+      <p class="text-titulo font-semibold">
+        Cada célula es como una pequeña fábrica que realiza todas las funciones necesarias para que el organismo pueda vivir, crecer y reproducirse.
+        No importa si somos unicelulares como las bacterias o multicelulares como los humanos, las células son las protagonistas en el escenario de la vida.
+      </p>
+
+      <!-- Caja de dato curioso -->
+      <div class="bg-caja curioso-box text-white font-bold p-5 rounded-xl shadow-md text-center max-w-lg">
+        Dato Curioso: ¡Si pudieras juntar todas las células de tu cuerpo, pesarían alrededor de 70 kilogramos!
+      </div>
+    </div>
+
+    <!-- Imagen sin fondo -->
+    <div class="flex justify-center lg:justify-end">
+      <img src="imagen/queescelula.png" alt="Célula eucariota"
+        class="max-w-full w-[85%] rounded-lg shadow-xl" />
+    </div>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Partes de la Célula - CeluVibe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Fuente Capitana -->
+  <link href="https://fonts.googleapis.com/css2?family=Capitana:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Configuración de Tailwind -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            capitana: ['Capitana', 'sans-serif'],
+          },
+          colors: {
+            fondo: '#F5E5D8',
+            texto: '#4D3227',
+            titulo: '#a2826d',
+            caja: '#ffffff',
+            borde: '#cac4be',
+            acento: '#9D7B6A',
+          },
+        },
+      },
+    };
+  </script>
+</head>
+
+<body class="bg-fondo text-texto font-capitana px-6 md:px-12 py-10">
+
+  <!-- Título principal -->
+  <header class="text-center mb-12 max-w-7xl mx-auto">
+    <h1 class="text-3xl md:text-5xl font-bold text-[#836152] leading-snug">
+      Cada Parte Tiene un Propósito
+    </h1>
+    <h2 class="text-2xl md:text-4xl font-bold text-[#4D3227] mt-2">
+      ¡Así Trabaja la <span class="text-[#836152]">Célula</span>!
+    </h2>
+  </header>
+
+  <!-- Contenedor principal de tarjetas -->
+  <main class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6 max-w-7xl mx-auto">
+
+    <!-- Tarjeta base reutilizable -->
+    <div class="group bg-white rounded-2xl border border-[#E4DAD3] p-5 shadow-md flex flex-col justify-between transform transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+      <div class="transition-all duration-300 group-hover:scale-[1.05]">
+        <h3 class="text-xl group-hover:text-2xl font-semibold text-[#844F3C] mb-2 transition-all duration-300">Núcleo</h3>
+        <p class="text-base group-hover:text-[1.05rem] leading-relaxed mb-4 transition-all duration-300">
+          El núcleo es el director de la célula. Su tarea es asegurarse de que todo funcione según lo planeado.
+          Almacena la información genética (ADN) y da las órdenes para que la célula crezca, se divida y realice sus funciones.
+        </p>
+      </div>
+      <img src="datos_images/nucleo.jpg" alt="Núcleo" class="rounded-lg mt-4 transition-transform duration-300 group-hover:scale-105">
+    </div>
+
+    <!-- Citoplasma -->
+    <div class="group bg-white rounded-2xl border border-[#E4DAD3] p-5 shadow-md flex flex-col justify-between transform transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+      <div class="transition-all duration-300 group-hover:scale-[1.05]">
+        <h3 class="text-xl group-hover:text-2xl font-semibold text-[#844F3C] mb-2 transition-all duration-300">Citoplasma</h3>
+        <p class="text-base group-hover:text-[1.05rem] leading-relaxed mb-4 transition-all duration-300">
+          Es el espacio donde todo sucede. El citoplasma ayuda a que los organelos puedan moverse y que los nutrientes lleguen a donde más se necesitan.
+          ¡Es el centro de logística de la célula!
+        </p>
+      </div>
+      <img src="datos_images/citoplasma.jpg" alt="Citoplasma" class="rounded-lg mt-4 transition-transform duration-300 group-hover:scale-105">
+    </div>
+
+    <!-- Membrana Celular -->
+    <div class="group bg-white rounded-2xl border border-[#E4DAD3] p-5 shadow-md flex flex-col justify-between transform transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+      <div class="transition-all duration-300 group-hover:scale-[1.05]">
+        <h3 class="text-xl group-hover:text-2xl font-semibold text-[#844F3C] mb-2 transition-all duration-300">Membrana Celular</h3>
+        <p class="text-base group-hover:text-[1.05rem] leading-relaxed mb-4 transition-all duration-300">
+          La membrana es el guardia de seguridad de la célula. Decide qué puede entrar (como oxígeno y nutrientes) y qué debe salir (como los desechos).
+          Protege la célula de agentes dañinos.
+        </p>
+      </div>
+      <img src="datos_images/membrana.jpg" alt="Membrana Celular" class="rounded-lg mt-4 transition-transform duration-300 group-hover:scale-105">
+    </div>
+
+    <!-- Mitocondrias -->
+    <div class="group bg-white rounded-2xl border border-[#E4DAD3] p-5 shadow-md flex flex-col justify-between transform transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+      <div class="transition-all duration-300 group-hover:scale-[1.05]">
+        <h3 class="text-xl group-hover:text-2xl font-semibold text-[#844F3C] mb-2 transition-all duration-300">Mitocondrias</h3>
+        <p class="text-base group-hover:text-[1.05rem] leading-relaxed mb-4 transition-all duration-300">
+          ¡Las mitocondrias son las centrales de energía de la célula! Si no tuviéramos mitocondrias, ¡nos quedaríamos sin energía para hacer cualquier cosa!
+        </p>
+      </div>
+      <img src="datos_images/mitocondria2.jpg" alt="Mitocondrias" class="rounded-lg mt-4 transition-transform duration-300 group-hover:scale-105">
+    </div>
+
+    <!-- Ribosomas -->
+    <div class="group bg-white rounded-2xl border border-[#E4DAD3] p-5 shadow-md flex flex-col justify-between transform transition-transform duration-300 hover:scale-105 hover:shadow-xl cursor-pointer">
+      <div class="transition-all duration-300 group-hover:scale-[1.05]">
+        <h3 class="text-xl group-hover:text-2xl font-semibold text-[#844F3C] mb-2 transition-all duration-300">Ribosomas</h3>
+        <p class="text-base group-hover:text-[1.05rem] leading-relaxed mb-4 transition-all duration-300">
+          Los ribosomas son los chefs que preparan las proteínas. ¡Así que los ribosomas son esenciales para mantener a las células saludables y activas!
+        </p>
+      </div>
+      <img src="datos_images/ribosoma.jpeg" alt="Ribosomas" class="rounded-lg mt-4 transition-transform duration-300 group-hover:scale-105">
+    </div>
+
+  </main>
+</body>
+</html>

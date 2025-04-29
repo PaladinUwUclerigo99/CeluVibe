@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour por una Célula</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fff3e9;
+      color: #5a4e4e;
+      overflow-x: hidden;
+    }
+    header {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem;
+    }
+    header button {
+      margin-left: 1rem;
+      border: 2px solid #5a4e4e;
+      background-color: transparent;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+    header button:hover {
+      background-color: #5a4e4e;
+      color: white;
+    }
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 1rem;
+      color: #5a4e4e;
+      animation: slideInDown 1s ease-in-out;
+    }
+    h2 {
+      text-align: center;
+      font-size: 3rem;
+      font-weight: 900;
+      margin: 0;
+      animation: scaleUp 1.2s ease-in-out;
+    }
+    p {
+      text-align: center;
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 1rem auto;
+    }
+    .dato-curioso {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .partes {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin: 2rem;
+    }
+    .parte {
+      background-color: white;
+      border: 2px solid #e0cfc2;
+      padding: 1rem;
+      width: 180px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 1s ease forwards;
+    }
+    .parte:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    }
+    .parte img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    .parte p {
+      margin-top: 0.5rem;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    @keyframes slideInDown {
+      0% { transform: translateY(-100px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes scaleUp {
+      0% { transform: scale(0.8); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes fadeInUp {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <button onclick="window.location.href='index.html'">Home</button>
+    <button onclick="window.location.href='que_es.html'">About</button>
+  </header>
+
+  <h1>¡TOUR POR EL INTERIOR DE UNA CÉLULA!</h1>
+  <h2>CONOCE SUS PARTES</h2>
+
+  <p>Las células son como pequeñas ciudades llenas de actividad.<br>
+  ¡Vamos a dar un paseo por esta mini ciudad y ver qué hace cada parte!</p>
+
+  <p class="dato-curioso"><strong>Dato Curioso:</strong> Si todas las mitocondrias de tu cuerpo se alinearan, ¡podrían llenar todo un estadio de fútbol!</p>
+
+  <div class="partes">
+    <div class="parte">
+      <img src="datos_images/nucleo2.jpg" alt="Núcleo">
+      <p>Núcleo</p>
+    </div>
+    <div class="parte">
+      <img src="datos_images/Citoplasma2.jpg" alt="Citoplasma">
+      <p>Citoplasma</p>
+    </div>
+    <div class="parte">
+      <img src="datos_images/membrana2.jpg" alt="Membrana Celular">
+      <p>Membrana Celular</p>
+    </div>
+    <div class="parte">
+      <img src="datos_images/mitocondria3.png" alt="Mitocondrias">
+      <p>Mitocondrias</p>
+    </div>
+    <div class="parte">
+      <img src="datos_images/Ribosomas.jpg" alt="Ribosomas">
+      <p>Ribosomas</p>
+    </div>
+  </div>
+</body>
+</html>
